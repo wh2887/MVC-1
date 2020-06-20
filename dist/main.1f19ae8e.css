@@ -1,0 +1,106 @@
+* {
+  margin: 0;;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  margin: 0;;
+  padding: 0;
+  box-sizing: border-box;
+}
+ol,ul{
+  list-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+body > .page{
+  display: flex;
+  flex-wrap: wrap;
+}
+body > .page > section{
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid grey;
+}
+
+.app1 {
+  width: 50vw;
+  height: 50vh;
+
+}
+
+.app1 .output {
+}
+
+.app1 .actions {
+}
+.app2 {
+}
+
+.app2 .tab-bar {
+  display: flex;
+}
+
+.app2 .tab-bar > li {
+  border: 3px solid black;
+  width: 50%;
+}
+
+/*如果这个li是selected，就有{}里面的样式*/
+.app2 .tab-bar > li.selected {
+  background-color: saddlebrown;
+  color: white;
+}
+
+.app2 .tab-content > li {
+  display: none;
+}
+
+.app2 .tab-content > li.active {
+  display: block;
+}
+
+.app3 {
+  width: 50vw;
+  height: 50vh;
+}
+
+.app3 .square {
+  border: 1px solid darkred;
+  width: 10vw;
+  height: 10vw;
+  margin-top: 10vw;
+  margin-left: 10vw;
+  transition: transform 1s;
+}
+.app3 .square.active {
+  transform: translateX(15vw);
+}
+
+.app4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+@keyframes change {
+  0%{
+    background: slateblue;
+  }
+  100%{
+    background: pink;
+  }
+}
+.app4 .circle{
+  border: 1px solid black;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+}
+.app4 .circle.active{
+  animation: change 1s infinite alternate linear;
+}
+
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */
