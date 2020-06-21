@@ -1,5 +1,13 @@
 import $ from 'jquery'
 import './app3.css'
+const  html = `
+    <section class="app3">
+        <div class="square">
+
+        </div>
+    </section>
+`
+const $element = $(html).appendTo($('body>.page'))
 
 const  $square = $('.app3 .square')
 const localKey = 'app3.active'
